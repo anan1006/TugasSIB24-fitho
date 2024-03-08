@@ -212,8 +212,11 @@
                default:
                   hasilOperasi = "Tidak valid";
             }
-
-            document.getElementById("hasilOperasi").textContent = `Hasil : ${angka1} ${operand} ${angka2} = ${hasilOperasi}`;
+            if (isNaN(hasilOperasi)) {
+               document.getElementById("hasilOperasi").textContent = `Hasil : ${angka1} ${operand} ${angka2} = Tidak dapat dioperasikan. Operand Harus Angka`;
+            }else{
+               document.getElementById("hasilOperasi").textContent = `Hasil : ${angka1} ${operand} ${angka2} = ${hasilOperasi}`;
+            }
          });
 
          // LOOPING
