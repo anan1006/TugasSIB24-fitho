@@ -99,9 +99,9 @@ nav ul li a:hover {
 .title-home {
    font-weight: bold;
    line-height: 40px;
+   color: #9e0a0a;
 }
 .sub-title-home {
-   margin: 30px 0;
    width: 100%;
    background-color: red;
    color: white;
@@ -132,6 +132,34 @@ nav ul li a:hover {
    height: 250px;
    object-fit: cover;
    border-radius: 5px 5px 0 0;
+}
+
+.content-home {
+   display: flex;
+   gap: 20px;
+}
+
+.news-home {
+   border: 2px solid red;
+   width: 30%;
+   height: fit-content;
+   border-radius: 5px;
+}
+.news-header {
+   text-align: center;
+   background-color: red;
+   color: white;
+   height: 50px;
+   line-height: 50px;
+}
+.berita {
+   border-bottom: 1px solid red;
+   padding: 20px 0;
+}
+.berita p a {
+   text-decoration: none;
+   color: rgb(182, 17, 17);
+   font-size: 14px;
 }
 
 .img-header {
@@ -290,6 +318,13 @@ footer h3 {
       display: none;
    }
 
+   .content-home {
+      flex-direction: column-reverse;
+   }
+   .news-home {
+      width: 100%;
+      margin-top: 50px;
+   }
    .menu-icon {
       display: flex;
       align-items: center;
@@ -321,7 +356,7 @@ footer h3 {
       border: 2px solid red;
       padding: 5px;
       text-align: center;
-      color: red;
+      color: rgb(192, 34, 34);
       font-size: 12px;
    }
 
