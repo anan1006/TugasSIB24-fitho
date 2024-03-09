@@ -36,7 +36,9 @@ nav {
    justify-content: space-between;
    border-bottom: 4px solid red;
 }
-
+nav img {
+   height: 70px;
+}
 nav ul {
    list-style: none;
    display: flex;
@@ -268,10 +270,17 @@ footer h3 {
    nav {
       flex-wrap: wrap;
    }
+   nav img {
+      height: 40px;
+   }
    nav ul {
       flex-direction: column;
       width: 100%;
       padding: 20px 0;
+   }
+   nav ul li {
+      padding-bottom: 5px;
+      border-bottom: 1px solid red;
    }
 
    nav ul.hidden {
