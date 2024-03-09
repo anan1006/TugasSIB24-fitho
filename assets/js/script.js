@@ -22,3 +22,11 @@ function showSlides(n) {
    slides[slideIndex - 1].style.display = "block";
    setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
+
+// Responsive Nav
+const menuIcon = document.getElementById("menu-icon");
+const menuList = document.getElementById("menu-list");
+
+menuIcon.addEventListener("click", () => {
+   menuList.classList.toggle("hidden");
+});
