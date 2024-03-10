@@ -229,6 +229,7 @@
          document.getElementById('loop').addEventListener("click", function(){
             let banyakLooping = document.getElementById('n-looping').value;
             let hasil = document.getElementById('hasilLooping');
+            hasil.innerHTML = ``
             for (let index = 0; index < banyakLooping; index++) {
                hasil.innerHTML += `<li>Looping ke ${index+1}</li>`
             }
