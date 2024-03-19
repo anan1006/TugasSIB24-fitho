@@ -61,7 +61,7 @@
       <br />
 
       <div class="container">
-         <h1 class="title-home">Hello Fans, <br />Get info about JKT48 here...</h1>
+         <h1 class="title-home">Halaman Landing DOM</h1>
 
          <div class="content-home mt-2">
             <div class="news-home">
@@ -146,5 +146,14 @@
          <h3>By : Anandahri Alfitho Deanova</h3>
       </footer>
       <script src="../js/landingdom.js"></script>
+      <script>
+         // Responsive Nav
+         const menuIcon = document.getElementById("menu-icon");
+         const menuList = document.getElementById("menu-list");
+
+         menuIcon.addEventListener("click", () => {
+            menuList.classList.toggle("hidden");
+         });
+      </script>
    </body>
 </html>
