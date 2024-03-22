@@ -375,7 +375,9 @@ footer h3 {
 .table-produkapi th,
 .table-produkapi td {
    border: 2px solid red;
-   padding: 5px 70px;
+   padding: 8px;
+   text-align: center;
+   text-transform: capitalize;
 }
 .table-produkapi th {
    background-color: red;
@@ -468,6 +470,9 @@ footer h3 {
    .table-operand th,
    .table-operand td {
       padding: 5px 40px;
+   }
+   .produk {
+      overflow-x: auto;
    }
    .table-produkapi th.no-tabel,
    .table-produkapi td.no-tabel {
