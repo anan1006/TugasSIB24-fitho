@@ -29,7 +29,7 @@
 //          getData();
 //       });
 // });
-let apiKey = "31836b6c1eab48509a2955aca6a878ed";
+let apiKey = "c7f06fb80f3a47c7a73343be3a73201a";
 let url = `https://crudcrud.com/api/${apiKey}/products`;
 
 getData();
@@ -52,7 +52,7 @@ function getData() {
                                           <td class="no-tabel">${nomor}</td>
                                           <td>${element.nama_produk}</td>
                                           <td>${element.jumlah}</td>
-                                          <td>${element.harga}</td>
+                                          <td>${element.harga.toLocaleString("id-ID", { style: "currency", currency: "IDR" })}</td>
                                           <td>
                                              <div class="" style="display:flex;gap:10px">
                                                 <button class="update-data btn-daftar" id="updateProduk" onclick="showData('${element._id}')" style="text-decoration:none">Update</button>
